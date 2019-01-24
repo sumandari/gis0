@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>quick start</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/leaflet2.css">
+</head>
+<body>
+    <!-- The sidebar -->
+    <div class="sidebar">
+        
+         
+        <a class="active" href="#">PDAM GIS</a>
+
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="no sambung..." name="nomer" id="nomer">
+                <input type="text" placeholder="nama pelanggan..." name="nama" id="nama">
+                <input type="text" placeholder="nama jalan..." name="jalan" id="jalan">
+                <button id="test" type="submit"><i class="fa fa-search"></i></button>
+            </form> 
+        </div>
+
+        <p></p>
+
+        
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+
+        <div id="mapid"></div>
+    </div>
+    
+    <!-- my js -->
+    <script src="/static/out.json"></script>
+    <script src="/static/leaflet2.js"></script>
+</body>
+</html>
